@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471B2A4D1F556F4C0015E282 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 471B2A4F1F556F4C0015E282 /* Localizable.strings */; };
 		479A35451F55515300C49653 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A35441F55515300C49653 /* main.m */; };
 		479A35481F55515300C49653 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A35471F55515300C49653 /* AppDelegate.m */; };
 		479A35531F55515300C49653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479A35521F55515300C49653 /* Assets.xcassets */; };
@@ -21,7 +22,6 @@
 		479A35941F55536800C49653 /* OverviewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A358F1F55536800C49653 /* OverviewNavigationController.m */; };
 		479A35951F55536800C49653 /* OverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A35911F55536800C49653 /* OverviewViewController.m */; };
 		479A35A11F55554E00C49653 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A35A01F55554E00C49653 /* RootViewController.m */; };
-		479A35A31F55575900C49653 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 479A35A21F55575900C49653 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		471B2A4E1F556F4C0015E282 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		471B2A501F556F4F0015E282 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		479A35401F55515300C49653 /* bg-stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bg-stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		479A35441F55515300C49653 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		479A35461F55515300C49653 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,7 +74,6 @@
 		479A35911F55536800C49653 /* OverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverviewViewController.m; sourceTree = "<group>"; };
 		479A359F1F55554E00C49653 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		479A35A01F55554E00C49653 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		479A35A21F55575900C49653 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +135,7 @@
 				479A35521F55515300C49653 /* Assets.xcassets */,
 				479A35571F55515300C49653 /* Info.plist */,
 				479A35431F55515300C49653 /* Supporting Files */,
-				479A35A21F55575900C49653 /* Localizable.strings */,
+				471B2A4F1F556F4C0015E282 /* Localizable.strings */,
 			);
 			path = "bg-stats";
 			sourceTree = "<group>";
@@ -307,6 +308,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
+				"zh-Hans",
+				Base,
 			);
 			mainGroup = 479A35371F55515300C49653;
 			productRefGroup = 479A35411F55515300C49653 /* Products */;
@@ -326,7 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				479A35531F55515300C49653 /* Assets.xcassets in Resources */,
-				479A35A31F55575900C49653 /* Localizable.strings in Resources */,
+				471B2A4D1F556F4C0015E282 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,11 +400,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		471B2A4F1F556F4C0015E282 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				471B2A4E1F556F4C0015E282 /* en */,
+				471B2A501F556F4F0015E282 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		479A356E1F55515400C49653 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -449,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

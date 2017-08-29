@@ -1,0 +1,18 @@
+/* 
+  RootLocalizable.strings
+  bg stats
+
+  Created by 卢俊杰 on 2017/6/13.
+  Copyright © 2017年 mine. All rights reserved.
+*/
+
+"global_button_done" = "完成";
+
+"tabbar_item_title_overview" = "概览";
+"overview_navigationbar_item_title_boardgamestats" = "桌游统计";
+
+"tabbar_item_title_games" = "游戏";
+
+"tabbar_item_title_player" = "玩家";
+
+"setting_navigationbar_item_title_setting" = "设置";
